@@ -1,0 +1,48 @@
+body {
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  padding-top: 60px;
+}
+
+#navbar {
+  padding-top: 20px;
+}
+
+.post {
+  padding-top: 10px;
+  text-align: left;
+}
+
+.date {
+  color: #666;
+  font-style: italic;
+  font-size: 14px;
+  text-align: left;
+}
+
+.author {
+  color: #666;
+  font-size: 14px;
+  text-align: left;
+}
+
+#loader{
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.footer {
+  padding-top: 20px;
+}
+
+#footer-grite {
+  padding-top: 20px;
+  font-size: 12px;
+  padding-bottom: 10px
+}
