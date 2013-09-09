@@ -34,7 +34,7 @@ function loadPosts() {
     $.get('https://api.github.com/gists/' + config.posts[loaded], function (data) {
       var gist = '';
       for (var j in data.files)
-        gist = gist + markdown.toHTML(data.files[j].content);
+        gist = gist + marked.parse(data.files[j].content);
       var dom = '<div class="post">' +
                 '<div class="post-text">' + gist + '</div>' +
                 '<span class="date"><a href="' + data.html_url + '">' + new Date(data.updated_at) + '</a></span>' +
