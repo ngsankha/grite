@@ -38,7 +38,7 @@ function loadPosts() {
       var dom = '<div class="post">' +
                 '<div class="post-text">' + gist + '</div>' +
                 '<span class="date"><a href="' + data.html_url + '">' + new Date(data.updated_at) + '</a></span>' +
-                ' • <span class="author">Posted by <a href="https://github.com/' + data.user.login + '">' + data.user.login + '</a></span>' +
+                ' • <span class="author">Posted by <a href="https://github.com/' + data.owner.login + '">' + data.owner.login + '</a></span>' +
                 '</div><hr>';
       $(dom).appendTo('#post' + data.id);
     }, 'json').done(function() {
